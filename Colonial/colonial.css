@@ -136,3 +136,12 @@ label {
          1px  1px 0 #000;  /* Bottom-right shadow */
     margin-bottom: 1rem;
 }
+
+.home-link {
+    text-decoration: none;
+    color: inherit; /* Matches the current text color */
+}
+
+.home-link:hover {
+    color: #ff3333; /* Optional hover effect */
+}
