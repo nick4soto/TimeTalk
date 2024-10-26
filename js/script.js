@@ -19,7 +19,7 @@ async function translateToShakespeare() {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer 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`  // Replace with your actual API key
+                "Authorization": `Bearer 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`
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",
