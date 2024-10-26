@@ -136,3 +136,20 @@ label {
          1px  1px 0 #000;  /* Bottom-right shadow */
     margin-bottom: 1rem;
 }
+
+/* Result Box Styling */
+#result {
+    margin-top: 20px;
+    padding: 1rem;
+    width: 70%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #ff3333; /* Red text color */
+    border: 2px solid #ff3333; /* Red border */
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
+}
+
