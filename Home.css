@@ -102,9 +102,15 @@ h1 {
     background-color: #1b1b1b;
 }
 
+#slideshow h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.7);
+}
+
 .slideshow-container {
     position: relative;
-    width: 100vw;  /* Full viewport width */
+    width: 98vw;  /* Full viewport width */
     height: calc(100vh - 4rem); /* Adjust to fill most of the screen */
     overflow: hidden;
     display: flex;
