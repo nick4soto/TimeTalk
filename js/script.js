@@ -1,4 +1,4 @@
-async function translateToShakespeare() {
+async function translateToEra() {
     const userTextElement = document.getElementById("userText");
     const resultDiv = document.getElementById("result");
 
@@ -8,7 +8,7 @@ async function translateToShakespeare() {
     }
 
     const userText = userTextElement.value;
-    const promptTemplate = document.body.getAttribute("data-prompt");  
+    const promptTemplate = document.body.getAttribute("data-prompt");  // Get the custom prompt from the data attribute
     const prompt = `${promptTemplate}\n\n"${userText}"`;
 
     resultDiv.textContent = "Translating...";
@@ -35,4 +35,3 @@ async function translateToShakespeare() {
         resultDiv.textContent = "Error translating text. Please try again later.";
     }
 }
-

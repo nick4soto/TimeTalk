@@ -6,7 +6,7 @@
     <title>Future Translator</title>
     <link rel="stylesheet" href="future.css"> <!-- Link to external CSS file -->
 </head>
-<body>
+<body data-prompt="Translate the following modern English to futuristic English:">
     <header>
         <h1>Time Talk</h1>
         <p>Step into the Time Machine and choose an era to transform your words:</p>
@@ -25,9 +25,10 @@
     <h2>Future Translator</h2>
     <label for="userText">Enter Text to Translate:</label><br>
     <textarea id="userText" rows="5" placeholder="Enter your modern text here..."></textarea><br>
-    <button class="translate-button" onclick="translateToFuture()">Translate to Future</button>
+    <button class="translate-button" onclick="translateToEra()">Translate to Future</button>
     <div id="result"></div>
+    
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
