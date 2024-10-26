@@ -6,7 +6,7 @@
     <title>Colonial Translator</title>
     <link rel="stylesheet" href="colonial.css"> <!-- Link to external CSS file -->
 </head>
-<body>
+<body data-prompt="Translate the following modern English to colonial English:">
     <header>
         <h1>Time Talk</h1>
         <p>Step into the Time Machine and choose an era to transform your words:</p>
@@ -25,9 +25,9 @@
     <h2>Colonial Translator</h2>
     <label for="userText">Enter Text to Translate:</label><br>
     <textarea id="userText" rows="5" placeholder="Enter your modern text here..."></textarea><br>
-    <button class="translate-button" onclick="translateToColonial()">Translate to Colonial</button>
-    <div id="result"></div>
+    <button class="translate-button" onclick="translateToEra()">Translate to Colonial</button>
+    <div id="result" class="result-box">Translations will show here</div>    
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
