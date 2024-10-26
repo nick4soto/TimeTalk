@@ -167,3 +167,11 @@ label {
     transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
 }
 
+.home-link {
+    text-decoration: none;
+    color: inherit; /* Matches the current text color */
+}
+
+.home-link:hover {
+    color: #ff3333; /* Optional hover effect */
+}
