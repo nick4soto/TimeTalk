@@ -35,3 +35,4 @@ async function translateToShakespeare() {
         resultDiv.textContent = "Error translating text. Please try again later.";
     }
 }
+
