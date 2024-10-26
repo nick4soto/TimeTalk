@@ -35,8 +35,8 @@ header {
 h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: #0000a0; /* Red color */
-    text-shadow: 0 0 10px rgb(0, 0, 160);
+    color: #89CFF0; /* Red color */
+    text-shadow: 0 0 10px rgb(137, 207, 240);
     animation: pulse 1.5s infinite;
 }
 
@@ -44,7 +44,7 @@ h1 {
 p, label {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #0000a0; /* Red for label text */
+    color: #89CFF0; /* Red for label text */
 }
 
 /* Button Container */
@@ -64,25 +64,25 @@ p, label {
     text-decoration: none;
     border-radius: 10px;
     background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-    border: 2px solid #0000a0; /* Red border */
+    border: 2px solid #89CFF0; /* Red border */
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 5px rgb(0, 0, 160); /* Red inner glow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 5px rgb(137, 207, 240); /* Red inner glow */
     cursor: pointer;
 }
 
 /* Button Hover Effect */
 .period-button:hover, .translate-button:hover {
     color: #2a2a2a;
-    box-shadow: 0 4px 12px rgb(0, 0, 160), inset 0 0 8px rgb(0, 0, 160);
+    box-shadow: 0 4px 12px rgb(137, 207, 240, 0.5), inset 0 0 8px rgb(137, 207, 240, 0.7);
     transform: translateY(-2px);
-    background: #0000a0;
+    background: #89CFF0;
 }
 
 /* Button Active Effect */
 .period-button:active, .translate-button:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 6px rgb(0, 0, 160), inset 0 0 5px rgb(0, 0, 160);
-    background: #0000a0;
+    box-shadow: 0 2px 6px rgb(137, 207, 240, 0.5), inset 0 0 5px rgb(137, 207, 240, 0.7);
+    background: #89CFF0;
 }
 
 /* Textarea Styling */
@@ -93,7 +93,7 @@ textarea {
     font-size: 16px;
     background-color: #000; /* Black background */
     color: #f0f0f0; /* White text */
-    border: 2px solid #0000a0; /* Red border */
+    border: 2px solid #89CFF0; /* Red border */
     border-radius: 5px;
     resize: none;
     margin-bottom: 1rem;
@@ -107,7 +107,7 @@ textarea {
     font-size: 16px;
     background-color: #000; /* Black background */
     color: #f0f0f0; /* White text */
-    border: 2px solid #0000a0; /* Red border */
+    border: 2px solid #89CFF0; /* Red border */
     border-radius: 5px;
     min-height: 100px; /* Minimum height for readability */
     margin-top: 1rem;
@@ -121,10 +121,10 @@ textarea {
 /* Time Machine Animation */
 @keyframes pulse {
     0%, 100% {
-        text-shadow: 0 0 10px rgb(0, 0, 160);
+        text-shadow: 0 0 10px rgb(137, 207, 240, 0.7);
     }
     50% {
-        text-shadow: 0 0 20px rgb(0, 0, 160);
+        text-shadow: 0 0 20px rgb(137, 207, 240, 0.5);
     }
 }
 
@@ -158,5 +158,5 @@ label {
 }
 
 .home-link:hover {
-    color: #0000a0; /* Optional hover effect */
+    color: #89CFF0; /* Optional hover effect */
 }
