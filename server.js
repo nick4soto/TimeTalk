@@ -36,10 +36,11 @@ app.post('/translate', async (req, res) => {
         );
 
         res.json(response.data);
-    } catch (error) {
-        console.error("Error:", error);
+    }  catch (error) {
+        console.error("Error:", error.response?.data || error.message || error);
         res.status(500).json({ error: "Error processing request" });
     }
+    
 });
 
 // Start the server
