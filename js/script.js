@@ -8,35 +8,23 @@ async function translateToShakespeare() {
     }
 
     const userText = userTextElement.value;
-    resultDiv.textContent = "Translating...";
-
-    // Get the prompt from the data attribute in the HTML
-    const promptTemplate = document.body.getAttribute("data-prompt");
+    const promptTemplate = document.body.getAttribute("data-prompt");  
     const prompt = `${promptTemplate}\n\n"${userText}"`;
 
+    resultDiv.textContent = "Translating...";
+
     try {
-        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        const response = await fetch("http://localhost:3000/translate", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer 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`  // Replace with your actual API key
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify({
-                model: "gpt-3.5-turbo",
-                messages: [
-                    {
-                        role: "user",
-                        content: prompt
-                    }
-                ],
-                max_tokens: 150
-            })
+            body: JSON.stringify({ text: prompt })
         });
 
         const data = await response.json();
-        console.log("API response:", data);
+        console.log("Backend response:", data);
 
-        // Display the response
         if (data.choices && data.choices.length > 0) {
             resultDiv.textContent = data.choices[0].message.content.trim();
         } else {
@@ -47,3 +35,4 @@ async function translateToShakespeare() {
         resultDiv.textContent = "Error translating text. Please try again later.";
     }
 }
+
