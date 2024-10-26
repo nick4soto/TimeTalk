@@ -88,3 +88,33 @@ p {
 h1 {
     animation: pulse 1.5s infinite;
 }
+
+/* Slideshow Container */
+/* Slideshow Container */
+#slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f0f0f0;
+    height: 100%; /* Full viewport height */
+    background-color: #1b1b1b;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100vw;  /* Full viewport width */
+    height: calc(100vh - 4rem); /* Adjust to fill most of the screen */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideshow-image {
+    width: 100vw;  /* Stretch image to full width of the screen */
+    height: auto;  /* Maintain aspect ratio */
+    transition: opacity 1.5s ease-in-out; /* Smooth fade transition */
+    opacity: 0;
+}
