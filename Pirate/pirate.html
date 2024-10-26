@@ -1,1 +1,35 @@
-sdef
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Translator</title>
+    <link rel="stylesheet" href="pirate.css"> <!-- Link to the Pirate-specific CSS file -->
+</head>
+<body data-prompt="Translate the following modern English to pirate lingo:">
+    <header>
+        <h1><a href="../index.html" class="home-link">Time Talk</a></h1>    
+        <p>Step into the Time Machine and choose an era to transform your words:</p>
+        <div class="button-container">
+            <a href="../Caveman/caveman.html" class="period-button">Caveman</a>
+            <a href="../Greek/greek.html" class="period-button">Greek</a>
+            <a href="../Medieval/medieval.html" class="period-button">Medieval</a>
+            <a href="../Shakespearian/shakespearian.html" class="period-button">Shakespearian</a>
+            <a href="../Pirate/pirate.html" class="period-button">Pirate</a>
+            <a href="../Colonial/colonial.html" class="period-button">Colonial</a>
+            <a href="../Modern/modern.html" class="period-button">Modern</a>
+            <a href="../Future/future.html" class="period-button">Future</a>
+        </div>
+    </header>
+
+    <h2>Pirate Translator</h2>
+    <label for="userText">Enter Text to Translate:</label><br>
+    <textarea id="userText" rows="5" placeholder="Enter your modern text here..."></textarea><br>
+    <button class="translate-button" onclick="translateToEra()">Translate to Pirate</button>
+    
+    <!-- Result box for displaying translations -->
+    <div id="result" class="result-box">Translations will show here</div>    
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
