@@ -39,6 +39,15 @@ p {
     color: #bbb;
 }
 
+.home-link {
+    text-decoration: none;
+    color: inherit; /* Matches the current text color */
+}
+
+.home-link:hover {
+    color: #00ffcc; /* Optional hover effect */
+}
+
 /* Button Container */
 .button-container {
     display: flex;

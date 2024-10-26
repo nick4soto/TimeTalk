@@ -10,7 +10,7 @@
 
     <!-- Header with Buttons for Each Time Period -->
     <header>
-        <h1>Time Talk</h1>
+        <h1><a href="index.html" class="home-link">Time Talk</a></h1>    
         <p>Step into the Time Machine and choose an era to transform your words:</p>
         <div class="button-container">
             <a href="Caveman/caveman.html" class="period-button">Caveman</a>
@@ -26,11 +26,12 @@
 
     <section id="slideshow">
         <div class="slideshow-container">
-            <img id="slideshow-image" src="photos/caveman.jpg" alt="Slideshow Image">
+            <img id="slideshow-image" src="photos/" alt="Slideshow Image">
         </div>
     </section>
 
     <script>
+// Array of images
 const images = [
     "photos/caveman.jpg",
     "photos/greek.jpg",
@@ -44,6 +45,12 @@ const images = [
 
 let currentIndex = 0;
 
+// Fade in the first image on page load
+window.addEventListener("load", () => {
+    const slideshowImage = document.getElementById("slideshow-image");
+    slideshowImage.style.opacity = 1; // Trigger initial fade-in on load
+});
+
 function updateSlideshow() {
     const slideshowImage = document.getElementById("slideshow-image");
 
@@ -51,7 +58,7 @@ function updateSlideshow() {
         // Fade out the current image
         slideshowImage.style.opacity = 0;
 
-        // After the fade-out transition, update the image source and fade in
+        // After fade-out, update the image source and fade in
         setTimeout(() => {
             slideshowImage.src = images[currentIndex];
             slideshowImage.alt = `Image of ${images[currentIndex].split('/').pop().split('.')[0]}`;
@@ -63,7 +70,7 @@ function updateSlideshow() {
     }
 }
 
-// Run the update function every 5 seconds
-setInterval(updateSlideshow, 5000);
+// Run the update function every 4 seconds
+setInterval(updateSlideshow, 4000);
     </script>
 </html>
