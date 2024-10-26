@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caveman Translator</title>
-    <link rel="stylesheet" href="caveman.css"> <!-- Link to Caveman-specific CSS file -->
+    <link rel="stylesheet" href="caveman.css"> <!-- Link to external CSS file -->
 </head>
-<body>
+<body data-prompt="Translate the following modern English to caveman English, add funny sounds like ooga booga:">
     <header>
         <h1><a href="../index.html" class="home-link">Time Talk</a></h1>    
         <p>Step into the Time Machine and choose an era to transform your words:</p>
@@ -25,11 +25,9 @@
     <h2>Caveman Translator</h2>
     <label for="userText">Enter Text to Translate:</label><br>
     <textarea id="userText" rows="5" placeholder="Enter your modern text here..."></textarea><br>
-    <button class="translate-button" onclick="translateToCaveman()">Translate to Caveman</button>
-    
-    <!-- Result box for displaying translations -->
-    <div id="result" class="result-box">Translations will show here</div>
+    <button class="translate-button" onclick="translateToEra()">Translate to Caveman</button>
+    <div id="result" class="result-box">Translations will show here</div>    
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
