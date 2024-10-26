@@ -7,8 +7,13 @@ async function translateToEra() {
         return;
     }
 
-    const userText = userTextElement.value;
-    const promptTemplate = document.body.getAttribute("data-prompt");  // Get the custom prompt from the data attribute
+    const userText = userTextElement.value.trim();
+    if (!userText) {
+        resultDiv.textContent = "Cannot provide a translation if there's no text.";
+        return;
+    }
+
+    const promptTemplate = document.body.getAttribute("data-prompt");
     const prompt = `${promptTemplate}\n\n"${userText}"`;
 
     resultDiv.textContent = "Translating...";
