@@ -3,38 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title with Two Textboxes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Caveman Translator</title>
+    <link rel="stylesheet" href="caveman.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <div class="container">
-        <h1>Page Title Here</h1>
-        <input type="text" placeholder="Enter first text here">
-        <input type="text" placeholder="Enter second text here">
-    </div>
+    <header>
+        <h1>Time Talk</h1>
+        <p>Step into the Time Machine and choose an era to transform your words:</p>
+        <div class="button-container">
+            <a href="caveman.html" class="period-button">Caveman</a>
+            <a href="greek.html" class="period-button">Greek</a>
+            <a href="medieval.html" class="period-button">Medieval</a>
+            <a href="shakespearian.html" class="period-button">Shakespearian</a>
+            <a href="pirate.html" class="period-button">Pirate</a>
+            <a href="colonial.html" class="period-button">Colonial</a>
+            <a href="modern.html" class="period-button">Modern</a>
+            <a href="future.html" class="period-button">Future</a>
+        </div>
+    </header>
+
+    <h2>Caveman Translator</h2>
+    <label for="userText">Enter Text to Translate:</label><br>
+    <textarea id="userText" rows="5" placeholder="Enter your modern text here..."></textarea><br>
+    <button class="translate-button" onclick="translateToCaveman()">Translate to Caveman</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>

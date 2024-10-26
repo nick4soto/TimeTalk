@@ -1,0 +1,138 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Image Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('../photos/future.webp'); /* Path to your Future-themed image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    padding: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+    background: linear-gradient(135deg, rgba(51, 51, 51, 0.8), rgba(27, 27, 27, 0.8)); /* Slightly transparent for background visibility */
+    width: 100vw;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #ff3333; /* Red color */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    animation: pulse 1.5s infinite;
+}
+
+/* Paragraph Styling */
+p, label {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #ff3333; /* Red for label text */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Time Period and Translate Button Styling */
+.period-button, .translate-button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border: 2px solid #ff3333; /* Red border */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 5px rgba(255, 0, 0, 0.5); /* Red inner glow */
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.period-button:hover, .translate-button:hover {
+    background: #ff3333; /* Red background on hover */
+    color: #1b1b1b;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.7), inset 0 0 8px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Button Active Effect */
+.period-button:active, .translate-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* Textarea Styling */
+textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000; /* Black background */
+    color: #f0f0f0; /* White text */
+    border: 2px solid #ff3333; /* Red border */
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+/* Result Styling */
+#result { 
+    margin-top: 20px; 
+    font-style: italic; 
+    color: #ddd;
+}
+
+/* Time Machine Animation */
+@keyframes pulse {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 1);
+    }
+}
+
+/* Title Styling for 'Future Translator' */
+h2 {
+    font-size: 2rem;
+    color: #fff; /* White color */
+    text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
+    margin-top: 1rem;
+}
+
+/* Label Styling for 'Enter Text to Translate' */
+label {
+    font-size: 1.2rem;
+    color: #fff; /* White color */
+    text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
+    margin-bottom: 1rem;
+}

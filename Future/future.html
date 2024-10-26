@@ -1,1 +1,33 @@
-sdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Translator</title>
+    <link rel="stylesheet" href="future.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Time Talk</h1>
+        <p>Step into the Time Machine and choose an era to transform your words:</p>
+        <div class="button-container">
+            <a href="caveman.html" class="period-button">Caveman</a>
+            <a href="greek.html" class="period-button">Greek</a>
+            <a href="medieval.html" class="period-button">Medieval</a>
+            <a href="shakespearian.html" class="period-button">Shakespearian</a>
+            <a href="pirate.html" class="period-button">Pirate</a>
+            <a href="colonial.html" class="period-button">Colonial</a>
+            <a href="modern.html" class="period-button">Modern</a>
+            <a href="future.html" class="period-button">Future</a>
+        </div>
+    </header>
+
+    <h2>Future Translator</h2>
+    <label for="userText">Enter Text to Translate:</label><br>
+    <textarea id="userText" rows="5" placeholder="Enter your modern text here..."></textarea><br>
+    <button class="translate-button" onclick="translateToFuture()">Translate to Future</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
